@@ -1,0 +1,8 @@
+''' Type your code here. '''
+miles_gallon = float(input('please enter how many miles per gallon your car produces:'))
+dollars_gallon = float(input('please enter how many dollar per gallon you paid for:'))
+print(miles_gallon, dollars_gallon)
+gas = dollars_gallon *  (20/miles_gallon)
+gas2 = dollars_gallon * (75/miles_gallon)
+gas3= dollars_gallon * (500/miles_gallon)
+print('{:.2f} {:.2f} {:.2f}'.format(gas,gas2, gas3))
