@@ -1,0 +1,17 @@
+#A customer in a store is purchasing five retail items.
+print('welcome to Kroger')
+food_item_1 = float((input('please enter price of your first grocery item:')))
+food_item_2 = float((input('please enter price of your second grocery item:')))
+food_item_3 = float((input('please enter price of your third grocery item:')))
+food_item_4 = float((input('please enter price of your fourth grocery item:')))
+food_item_5 = float((input('please enter price of your fifth grocery item:')))
+#subtotal.
+sub_total = float(food_item_1 + food_item_2 + food_item_3 + food_item_4 + food_item_5)
+print("your subtotal is: $", format(sub_total,'.2f'), sep="")
+#the amount of sales tax assume 7 percent
+sales_tax = float(sub_total * .07)
+print("your sales tax is: $", format(sales_tax,'.2f'), sep="")
+#total.
+total=float(sub_total + sales_tax)
+print("the total you owe is: $", format(total,'.2f'), sep="")
+
