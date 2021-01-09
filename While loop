@@ -1,0 +1,9 @@
+curr_power = 2
+user_char = 'y'
+
+while user_char == 'y':
+   print(curr_power)
+   curr_power = curr_power * 2
+   user_char = input()
+
+print('Done')
