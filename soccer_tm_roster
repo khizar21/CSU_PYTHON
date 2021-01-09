@@ -1,0 +1,8 @@
+weight = []
+for i in range(4):
+   weight.append(float(input('please enter weight ' + str(i + 1) +':')))
+print('weights', weight)
+avg_wt= sum(weight) / float(len(weight))
+max_wt= max(weight)
+print("average weight is: ", format(avg_wt,'.2f'), sep="")
+print("max weight in the selection is: ", format(max_wt,'.2f'), sep="")
