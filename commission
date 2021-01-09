@@ -1,0 +1,18 @@
+#create a variable to control the loop
+keep_going = 'y'
+
+#calculate a series of commissions.
+while keep_going == 'y':
+        #get sales person sales and commission rate
+    sales = float(input('enter amount of sales'))
+    comm_rate = float(input('enter amount of commsion rate'))
+
+        #calculate the commisssion
+    commission = sales * comm_rate
+
+        #Display the commission.
+    print('The commission is $',
+    format(commission, ',.2f'), sep= '')
+
+        #see if the user wants to do another one.
+    keep_going = input('Do you want to calculate another ' + 'commission  (enter y for yes): ')
