@@ -1,0 +1,20 @@
+#This program assists a technician in the process
+# of checking a substanc's temperature.
+
+# named constant to represent the maximums
+# temperature
+max_temp = 102.5
+
+#get the substance temperature
+temperature = float(input("enter the substance's Celsius temperature:"))
+#As long as necessary, instruct the user to
+#adjust the thermostat.
+while temperature > max_temp:
+    print('the Temperature is too high.')
+    print('turn the thermostat down and wait.')
+    print('5 minutes. then take the Temperature.')
+    print('again and enter it')
+    temperature = float(input("enter the new Celsius temperature:"))
+
+print('the temperature is acceptable')
+print('check it again in 15 minutes')
